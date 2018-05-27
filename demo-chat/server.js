@@ -31,7 +31,6 @@ io.on('connection', (socket) => {
 })
 
 // With socket.io we can't directly serve our backend with just Express any longer. We will use the Node HTTP server to that way both Express and Socket.io will be running
-
 //i.e. instead of:  var server = app.listen(3000, () => {
 var server = http.listen(3000, () => {
   console.log('server is listening on port', server.address().port) // callback
